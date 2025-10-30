@@ -1,26 +1,50 @@
 import AnimatedSection from "./AnimatedSection";
+import RevealText from "./RevealText";
 import vcPortrait from "@assets/generated_images/Vice_Chancellor_formal_portrait_d28967dd.png";
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 md:py-32 bg-background">
-      <div className="container max-w-7xl mx-auto px-6">
+    <section id="about" className="relative py-20 md:py-32 bg-background overflow-hidden">
+      <div className="absolute top-20 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float-slow" />
+      <div className="absolute bottom-20 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      
+      <div className="container max-w-7xl mx-auto px-6 relative z-10">
         <AnimatedSection>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-center mb-16" data-testid="text-about-heading">
-            About the Vice Chancellor
-          </h2>
+          <RevealText
+            text="About the Vice Chancellor"
+            className="font-serif text-4xl md:text-5xl font-semibold text-center mb-16"
+            data-testid="text-about-heading"
+          />
         </AnimatedSection>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <AnimatedSection delay={0.2}>
-            <div className="relative">
-              <img
-                src={vcPortrait}
-                alt="Dr. John Anderson"
-                className="w-full max-w-md mx-auto rounded-lg shadow-lg"
-                data-testid="img-about-portrait"
-              />
-            </div>
+            <motion.div 
+              className="relative group"
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary via-secondary to-accent opacity-20 blur-2xl group-hover:opacity-30 transition-opacity duration-500 rounded-2xl" />
+              <motion.div
+                animate={{ 
+                  boxShadow: [
+                    "0 10px 30px rgba(0, 123, 255, 0.2)",
+                    "0 10px 40px rgba(0, 193, 217, 0.3)",
+                    "0 10px 30px rgba(0, 123, 255, 0.2)"
+                  ]
+                }}
+                transition={{ duration: 4, repeat: Infinity }}
+                className="relative"
+              >
+                <img
+                  src={vcPortrait}
+                  alt="Dr. John Anderson"
+                  className="relative w-full max-w-md mx-auto rounded-lg"
+                  data-testid="img-about-portrait"
+                />
+              </motion.div>
+            </motion.div>
           </AnimatedSection>
 
           <AnimatedSection delay={0.4}>

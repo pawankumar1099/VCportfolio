@@ -34,14 +34,17 @@ export default function Navigation() {
     { label: "Contact", id: "contact" },
   ];
 
+  const isVisible = isScrolled || isMobileMenuOpen;
+
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-background/80 backdrop-blur-md shadow-sm"
-            : "bg-transparent"
-        }`}
+  className={`fixed top-0 left-0 right-0 z-50 transform transition-all duration-300 ${
+          isVisible
+            ? "translate-y-0 opacity-100 pointer-events-auto"
+            : "-translate-y-full opacity-0 pointer-events-none"
+        } ${isScrolled ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-transparent"}`}
+        aria-hidden={!isVisible}
         data-testid="nav-header"
       >
         <div className="container max-w-7xl mx-auto px-6 py-4">
@@ -51,7 +54,7 @@ export default function Navigation() {
               className="font-serif text-xl font-semibold text-foreground"
               data-testid="link-logo"
             >
-              Prestigious University
+              GLA University
             </button>
 
             <div className="hidden md:flex items-center gap-8">

@@ -1,7 +1,7 @@
 # Design Guidelines: Vice Chancellor Portfolio Website
 
 ## Design Approach
-**Reference-Based + Academic Excellence**: Drawing inspiration from prestigious university websites (Oxford, Harvard, MIT) combined with modern one-page portfolio aesthetics (Apple Events, Stripe Marketing). Emphasizing gravitas, credibility, and academic leadership while maintaining contemporary visual appeal.
+**Reference-Based + Academic Excellence**: Drawing inspiration from GLA University websites (Oxford, Harvard, MIT) combined with modern one-page portfolio aesthetics (Apple Events, Stripe Marketing). Emphasizing gravitas, credibility, and academic leadership while maintaining contemporary visual appeal.
 
 ## Core Design Principles
 - **Academic Sophistication**: Professional, trustworthy, and dignified visual language

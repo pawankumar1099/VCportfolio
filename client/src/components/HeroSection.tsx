@@ -51,7 +51,7 @@ export default function HeroSection() {
               transition={{ duration: 3, repeat: Infinity }}
               src={vcPortrait}
               alt="Vice Chancellor"
-              className="relative w-40 h-40 rounded-full object-cover border-4 border-white/30 shadow-2xl"
+              className="relative w-41 h-60  object-cover rounded-lg border-4 border-white/30 shadow-2xl"
               data-testid="img-hero-portrait"
             />
             <motion.div
@@ -70,7 +70,7 @@ export default function HeroSection() {
             className="font-serif text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent"
             data-testid="text-hero-name"
           >
-            Dr. John Anderson
+            Dr. Anoop Gupta
           </motion.h1>
 
           <motion.div
@@ -102,7 +102,7 @@ export default function HeroSection() {
             className="text-lg md:text-xl text-white/90 mb-12 font-medium"
             data-testid="text-hero-institution"
           >
-            Prestigious University
+            GLA University
           </motion.p>
 
           <motion.div

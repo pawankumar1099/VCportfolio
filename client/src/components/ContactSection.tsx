@@ -52,7 +52,7 @@ export default function ContactSection() {
                     <div>
                       <p className="font-medium">Address</p>
                       <p className="text-muted-foreground">
-                        Prestigious University<br />
+                        GLA University
                         Administration Building, 3rd Floor<br />
                         University Campus, City - 123456
                       </p>

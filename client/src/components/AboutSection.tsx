@@ -39,7 +39,7 @@ export default function AboutSection() {
               >
                 <img
                   src={vcPortrait}
-                  alt="Dr. John Anderson"
+                  alt="Dr. Anoop Gupta"
                   className="relative w-full max-w-md mx-auto rounded-lg"
                   data-testid="img-about-portrait"
                 />
@@ -50,7 +50,7 @@ export default function AboutSection() {
           <AnimatedSection delay={0.4}>
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-foreground" data-testid="text-about-bio">
-                Dr. John Anderson brings over 25 years of distinguished experience in higher education administration and academic leadership. With a Ph.D. in Educational Leadership from Cambridge University, his career has been marked by transformative initiatives that have elevated institutions to new heights of excellence.
+                Dr. Anoop Gupta brings over 25 years of distinguished experience in higher education administration and academic leadership. With a Ph.D. in Educational Leadership from Cambridge University, his career has been marked by transformative initiatives that have elevated institutions to new heights of excellence.
               </p>
 
               <p className="text-lg leading-relaxed text-muted-foreground">

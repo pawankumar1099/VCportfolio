@@ -15,7 +15,7 @@ export default function MessageSection() {
           <AnimatedSection delay={0.2} className="md:col-span-1">
             <img
               src={vcPortrait}
-              alt="Dr. John Anderson"
+              alt="Dr. Anoop Gupta"
               className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
               data-testid="img-message-portrait"
             />
@@ -38,7 +38,7 @@ export default function MessageSection() {
               </p>
               <div className="pt-6">
                 <p className="font-serif text-2xl font-semibold" data-testid="text-message-signature">
-                  Dr. John Anderson
+                  Dr. Anoop Gupta
                 </p>
                 <p className="text-muted-foreground">Vice Chancellor</p>
               </div>

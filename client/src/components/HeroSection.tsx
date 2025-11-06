@@ -85,7 +85,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.3 }}
                 src={vcPortrait}
-                alt="Dr. Ankur Rai - Vice Chancellor"
+                alt="Dr. Anoop Gupta - Vice Chancellor"
                 className="relative w-full h-auto object-cover rounded-3xl shadow-2xl"
                 data-testid="img-hero-portrait"
               />
@@ -101,7 +101,7 @@ export default function HeroSection() {
                   Vice Chancellor
                 </p>
                 <p className="text-sm sm:text-lg font-bold text-gray-900" data-testid="text-hero-title">
-                  Dr. Ankur Rai
+                  Dr. Anoop Gupta
                 </p>
               </motion.div>
 

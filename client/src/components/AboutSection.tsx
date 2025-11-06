@@ -1,6 +1,6 @@
 import AnimatedSection from "./AnimatedSection";
 import RevealText from "./RevealText";
-import vcPortrait from "@assets/generated_images/Vice_Chancellor_formal_portrait_d28967dd.png";
+import vcPortrait from "@assets/generated_images/Photo_Final_400x400.jpg";
 import { motion } from "framer-motion";
 
 export default function AboutSection() {

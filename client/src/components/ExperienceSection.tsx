@@ -15,7 +15,7 @@ export default function ExperienceSection() {
         "Global partnerships and student development"
       ],
       icon: Award,
-      color: "from-blue-500 to-blue-600"
+      color: "from-green-600 to-green-700"
     },
     {
       year: "2021–2025",
@@ -122,7 +122,7 @@ export default function ExperienceSection() {
   ];
 
   return (
-    <section id="experience" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-blue-50 via-white to-purple-50">
+    <section id="experience" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-green-50 via-white to-green-100">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -141,7 +141,7 @@ export default function ExperienceSection() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-purple-200 to-blue-200" />
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-200 via-green-300 to-green-200" />
 
           <div className="space-y-8 sm:space-y-12">
             {experiences.map((exp, index) => (

@@ -52,7 +52,7 @@ html::-webkit-scrollbar {
 
   --sidebar-border: 0 0% 88%;
 
-  --sidebar-primary: 207 100% 50%;
+  --sidebar-primary: 120 27% 35%;
 
   --sidebar-primary-foreground: 0 0% 100%;
 
@@ -60,7 +60,7 @@ html::-webkit-scrollbar {
 
   --sidebar-accent-foreground: 217 53% 20%;
 
-  --sidebar-ring: 207 100% 50%;
+  --sidebar-ring: 120 27% 35%;
 
   --popover: 0 0% 95%;
 
@@ -68,7 +68,7 @@ html::-webkit-scrollbar {
 
   --popover-border: 0 0% 86%;
 
-  --primary: 207 100% 50%;
+  --primary: 120 27% 35%;
 
   --primary-foreground: 0 0% 100%;
 
@@ -80,7 +80,7 @@ html::-webkit-scrollbar {
 
   --muted-foreground: 0 0% 46%;
 
-  --accent: 183 100% 43%;
+  --accent: 120 30% 45%;
 
   --accent-foreground: 0 0% 100%;
 
@@ -170,7 +170,7 @@ html::-webkit-scrollbar {
 
   --sidebar-border: 0 0% 18%;
 
-  --sidebar-primary: 207 100% 55%;
+  --sidebar-primary: 120 27% 40%;
 
   --sidebar-primary-foreground: 0 0% 100%;
 
@@ -178,7 +178,7 @@ html::-webkit-scrollbar {
 
   --sidebar-accent-foreground: 0 0% 90%;
 
-  --sidebar-ring: 207 100% 55%;
+  --sidebar-ring: 120 27% 40%;
 
   --popover: 220 13% 14%;
 
@@ -186,7 +186,7 @@ html::-webkit-scrollbar {
 
   --popover-border: 0 0% 22%;
 
-  --primary: 207 100% 55%;
+  --primary: 120 27% 40%;
 
   --primary-foreground: 0 0% 100%;
 
@@ -198,7 +198,7 @@ html::-webkit-scrollbar {
 
   --muted-foreground: 0 0% 65%;
 
-  --accent: 183 100% 43%;
+  --accent: 120 30% 45%;
 
   --accent-foreground: 0 0% 100%;
 

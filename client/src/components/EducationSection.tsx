@@ -11,7 +11,7 @@ export default function EducationSection() {
       achievement: "3.75/4.0 GPA",
       description: "Advanced training in educational leadership and administration from a world-renowned institution.",
       icon: GraduationCap,
-      color: "from-blue-600 to-blue-700"
+      color: "from-green-600 to-green-700"
     },
     {
       year: "2012",
@@ -70,7 +70,7 @@ export default function EducationSection() {
   ];
 
   return (
-    <section id="education" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-purple-50 via-white to-blue-50">
+    <section id="education" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-green-50 via-white to-green-100">
       <div className="container max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ export default function EducationSection() {
 
         <div className="relative">
           {/* Vertical timeline line - desktop */}
-          <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-purple-200 to-rose-200" />
+          <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-200 via-green-300 to-green-400" />
 
           <div className="space-y-6 sm:space-y-8">
             {education.map((edu, index) => (

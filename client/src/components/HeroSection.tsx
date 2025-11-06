@@ -9,7 +9,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-green-50 via-white to-green-50">
       <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
@@ -35,7 +35,7 @@ export default function HeroSection() {
               className="font-bold leading-tight"
               data-testid="text-hero-name"
             >
-              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-blue-500">
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-primary">
                 SHAPING
               </span>
               <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-gray-900">
@@ -58,7 +58,7 @@ export default function HeroSection() {
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.7 }}
-              className="inline-flex items-center gap-2 sm:gap-3 bg-blue-500 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg"
+              className="inline-flex items-center gap-2 sm:gap-3 bg-primary text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg"
             >
               <div className="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 sm:w-6 sm:h-6">
@@ -78,7 +78,7 @@ export default function HeroSection() {
           >
             <div className="relative">
               {/* Background Gradient Circle */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-200/40 via-blue-300/30 to-blue-400/40 rounded-3xl transform rotate-3 scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-br from-green-200/40 via-green-300/30 to-green-400/40 rounded-3xl transform rotate-3 scale-105" />
               
               {/* Main Image */}
               <motion.img
@@ -95,9 +95,9 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
-                className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 bg-white/95 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-4 rounded-xl sm:rounded-2xl shadow-lg border border-blue-100 max-w-[calc(100%-1.5rem)] sm:max-w-none"
+                className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 bg-white/95 backdrop-blur-sm px-3 sm:px-6 py-2 sm:py-4 rounded-xl sm:rounded-2xl shadow-lg border border-green-100 max-w-[calc(100%-1.5rem)] sm:max-w-none"
               >
-                <p className="text-[10px] sm:text-xs text-blue-600 font-semibold uppercase tracking-wide mb-0.5 sm:mb-1">
+                <p className="text-[10px] sm:text-xs text-primary font-semibold uppercase tracking-wide mb-0.5 sm:mb-1">
                   Vice Chancellor
                 </p>
                 <p className="text-sm sm:text-lg font-bold text-gray-900" data-testid="text-hero-title">
@@ -109,7 +109,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 1.1 }}
-                className="absolute top-3 sm:top-6 left-3 sm:left-6 bg-blue-500/95 backdrop-blur-sm px-3 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg"
+                className="absolute top-3 sm:top-6 left-3 sm:left-6 bg-primary/95 backdrop-blur-sm px-3 sm:px-5 py-2 sm:py-3 rounded-xl sm:rounded-2xl shadow-lg"
               >
                 <p className="text-[10px] sm:text-xs text-white font-semibold uppercase tracking-wide mb-0.5 sm:mb-1">
                   Since
@@ -125,7 +125,7 @@ export default function HeroSection() {
                   y: [0, -10, 0],
                 }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-3 sm:top-6 right-3 sm:right-6 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-blue-500 rounded-full flex items-center justify-center shadow-xl hidden sm:flex"
+                className="absolute top-3 sm:top-6 right-3 sm:right-6 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-primary rounded-full flex items-center justify-center shadow-xl hidden sm:flex"
               >
                 <div className="text-white text-center px-2">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 mx-auto mb-0.5 sm:mb-1">
@@ -160,7 +160,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8, delay: 1 }}
           className="grid grid-cols-2 gap-4 sm:gap-6 mt-8 sm:mt-12 lg:hidden"
         >
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center text-white shadow-lg">
+          <div className="bg-gradient-to-br from-primary to-green-700 rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center text-white shadow-lg">
             <p className="text-2xl sm:text-4xl font-bold mb-1 sm:mb-2" data-testid="stat-years">30+</p>
             <p className="text-xs sm:text-sm font-medium">Years in Education</p>
           </div>

@@ -15,7 +15,7 @@ export default function ExperienceSection() {
         "Global partnerships and student development"
       ],
       icon: Award,
-      color: "from-green-600 to-green-700"
+      color: "from-blue-500 to-indigo-500"
     },
     {
       year: "2021–2025",
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
         "Innovation culture development"
       ],
       icon: Building2,
-      color: "from-purple-500 to-purple-600"
+      color: "from-violet-500 to-purple-500"
     },
     {
       year: "2018–2021",
@@ -39,7 +39,7 @@ export default function ExperienceSection() {
         "Academic governance improvement"
       ],
       icon: Users,
-      color: "from-orange-500 to-orange-600"
+      color: "from-sky-500 to-cyan-500"
     },
     {
       year: "2010–Present",
@@ -51,7 +51,7 @@ export default function ExperienceSection() {
         "University website modernization (www.gla.ac.in)"
       ],
       icon: Briefcase,
-      color: "from-green-500 to-green-600"
+      color: "from-teal-500 to-emerald-500"
     },
     {
       year: "2006–2010",
@@ -62,7 +62,7 @@ export default function ExperienceSection() {
         "Elevated to top position among affiliated colleges"
       ],
       icon: Building2,
-      color: "from-teal-500 to-teal-600"
+      color: "from-indigo-500 to-blue-500"
     },
     {
       year: "2003–2006",
@@ -74,7 +74,7 @@ export default function ExperienceSection() {
         "Organized educational workshops"
       ],
       icon: Users,
-      color: "from-indigo-500 to-indigo-600"
+      color: "from-purple-500 to-fuchsia-500"
     },
     {
       year: "2000–2003",
@@ -85,7 +85,7 @@ export default function ExperienceSection() {
         "Built strong academic and administrative systems"
       ],
       icon: Briefcase,
-      color: "from-pink-500 to-pink-600"
+      color: "from-cyan-500 to-sky-500"
     },
     {
       year: "1998–2000",
@@ -96,7 +96,7 @@ export default function ExperienceSection() {
         "Beginning of long-term association with GLA"
       ],
       icon: Briefcase,
-      color: "from-cyan-500 to-cyan-600"
+      color: "from-blue-400 to-violet-400"
     },
     {
       year: "1997–1998",
@@ -105,7 +105,7 @@ export default function ExperienceSection() {
       description: "Strengthened expertise in academic instruction and curriculum delivery.",
       highlights: [],
       icon: Briefcase,
-      color: "from-amber-500 to-amber-600"
+      color: "from-teal-400 to-cyan-400"
     },
     {
       year: "1993–1997",
@@ -117,13 +117,22 @@ export default function ExperienceSection() {
         "Developed foundation in higher education pedagogy"
       ],
       icon: Briefcase,
-      color: "from-rose-500 to-rose-600"
+      color: "from-indigo-400 to-purple-400"
     }
   ];
 
   return (
-    <section id="experience" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-green-50 via-white to-green-100">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="experience" className="py-12 sm:py-20 md:py-32 bg-white relative overflow-hidden">
+      {/* Simple creative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-blue-50 opacity-40 blur-3xl" />
+        <div className="absolute top-40 right-20 w-40 h-40 rounded-full bg-purple-50 opacity-40 blur-3xl" />
+        <div className="absolute bottom-40 left-1/4 w-36 h-36 rounded-full bg-cyan-50 opacity-40 blur-3xl" />
+        <div className="absolute bottom-20 right-1/3 w-44 h-44 rounded-full bg-indigo-50 opacity-40 blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-violet-50 opacity-20 blur-3xl" />
+      </div>
+
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -141,7 +150,7 @@ export default function ExperienceSection() {
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-green-200 via-green-300 to-green-200" />
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-purple-200 to-cyan-200" />
 
           <div className="space-y-8 sm:space-y-12">
             {experiences.map((exp, index) => (
@@ -193,7 +202,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
           <h3 className="font-bold text-lg sm:text-xl md:text-2xl text-gray-900 mb-2" data-testid={`text-experience-title-${index}`}>
             {experience.title}
           </h3>
-          <p className="text-sm sm:text-base text-blue-600 font-semibold mb-3" data-testid={`text-experience-org-${index}`}>
+          <p className="text-sm sm:text-base text-indigo-600 font-semibold mb-3" data-testid={`text-experience-org-${index}`}>
             {experience.organization}
           </p>
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4" data-testid={`text-experience-desc-${index}`}>
@@ -203,7 +212,7 @@ function TimelineItem({ experience, index }: { experience: any; index: number })
             <ul className="space-y-2">
               {experience.highlights.map((highlight: string, i: number) => (
                 <li key={i} className="flex items-start gap-2 text-xs sm:text-sm text-gray-600">
-                  <span className="text-blue-500 mt-1">✓</span>
+                  <span className="text-violet-500 mt-1">✓</span>
                   <span>{highlight}</span>
                 </li>
               ))}

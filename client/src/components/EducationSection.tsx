@@ -11,7 +11,7 @@ export default function EducationSection() {
       achievement: "3.75/4.0 GPA",
       description: "Advanced training in educational leadership and administration from a world-renowned institution.",
       icon: GraduationCap,
-      color: "from-green-600 to-green-700"
+      color: "from-blue-600 to-indigo-600"
     },
     {
       year: "2012",
@@ -20,7 +20,7 @@ export default function EducationSection() {
       achievement: "Executive Education",
       description: "Strategic leadership and decision-making simulation training from India's premier management institute.",
       icon: Trophy,
-      color: "from-purple-600 to-purple-700"
+      color: "from-violet-600 to-purple-600"
     },
     {
       year: "2011–2012",
@@ -29,7 +29,7 @@ export default function EducationSection() {
       achievement: "Topper",
       description: "Distinguished performance in executive education program at one of India's top technical institutions.",
       icon: Award,
-      color: "from-orange-600 to-orange-700"
+      color: "from-sky-600 to-cyan-600"
     },
     {
       year: "1996–2000",
@@ -38,7 +38,7 @@ export default function EducationSection() {
       achievement: "Doctorate",
       description: "Advanced research and scholarly contribution in English Literature.",
       icon: GraduationCap,
-      color: "from-green-600 to-green-700"
+      color: "from-teal-600 to-emerald-600"
     },
     {
       year: "1992–1993",
@@ -47,7 +47,7 @@ export default function EducationSection() {
       achievement: "First Division",
       description: "Master of Philosophy with excellent academic standing.",
       icon: BookOpen,
-      color: "from-teal-600 to-teal-700"
+      color: "from-indigo-600 to-blue-600"
     },
     {
       year: "1990–1992",
@@ -56,7 +56,7 @@ export default function EducationSection() {
       achievement: "Gold Medalist",
       description: "Top academic honors in Master of Arts program.",
       icon: Award,
-      color: "from-amber-600 to-amber-700"
+      color: "from-purple-600 to-fuchsia-600"
     },
     {
       year: "1987–1990",
@@ -65,13 +65,22 @@ export default function EducationSection() {
       achievement: "College Topper",
       description: "Bachelor of Arts with distinction across multiple disciplines.",
       icon: GraduationCap,
-      color: "from-rose-600 to-rose-700"
+      color: "from-cyan-600 to-sky-600"
     }
   ];
 
   return (
-    <section id="education" className="py-12 sm:py-20 md:py-32 bg-gradient-to-br from-green-50 via-white to-green-100">
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="education" className="py-12 sm:py-20 md:py-32 bg-white relative overflow-hidden">
+      {/* Simple creative background elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-32 right-16 w-40 h-40 rounded-full bg-indigo-50 opacity-40 blur-3xl" />
+        <div className="absolute top-60 left-24 w-36 h-36 rounded-full bg-cyan-50 opacity-40 blur-3xl" />
+        <div className="absolute bottom-32 right-1/4 w-44 h-44 rounded-full bg-purple-50 opacity-40 blur-3xl" />
+        <div className="absolute bottom-48 left-1/3 w-32 h-32 rounded-full bg-blue-50 opacity-40 blur-3xl" />
+        <div className="absolute top-1/3 right-1/3 w-96 h-96 rounded-full bg-violet-50 opacity-20 blur-3xl" />
+      </div>
+
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -89,7 +98,7 @@ export default function EducationSection() {
 
         <div className="relative">
           {/* Vertical timeline line - desktop */}
-          <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-200 via-green-300 to-green-400" />
+          <div className="hidden lg:block absolute left-12 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-200 via-purple-200 to-cyan-200" />
 
           <div className="space-y-6 sm:space-y-8">
             {education.map((edu, index) => (

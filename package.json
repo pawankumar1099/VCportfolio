@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite --port 5000 --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --port 5000 --host 0.0.0.0",
-    "check": "tsc"
+  
+    "check": "tsc",
+   
+ 
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
